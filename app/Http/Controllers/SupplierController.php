@@ -26,7 +26,6 @@ class SupplierController extends Controller
      */
     public function create()
     {
-        //
     }
 
     /**
@@ -37,6 +36,9 @@ class SupplierController extends Controller
      */
     public function store(Request $request)
     {
+        $supplier = new Supplier();
+        $supplier->save();
+        return response('', 204);
     }
 
     /**

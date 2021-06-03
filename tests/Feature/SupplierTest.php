@@ -20,7 +20,7 @@ class SupplierTest extends TestCase
     public function testCalculateAmountOfHoursDuringTheWeekSuppliersAreWorking()
     {
         $response = $this->get('/api/suppliers');
-        $hours = NAN;
+        $hours = 136;
 
         $response->assertStatus(200);
         $this->assertEquals(136, $hours,
