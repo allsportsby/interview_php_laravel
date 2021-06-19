@@ -8,10 +8,16 @@ To be sure, that you are well fit for our company, let quickly check the things 
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent). 
-- <del>Database agnostic [schema migrations](https://laravel.com/docs/migrations).</del>
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
 - <del>[Robust background job processing](https://laravel.com/docs/queues).</del>
 
 Laravel is accessible, powerful, and provides tools required for <del>large,  robust</del><ins>medium, scalable</ins> applications.
+
+## Tasks
+
+All tasks are inside two TestCases: <b>Tests/Feature/AttractionTest</b> and <b>Tests/Feature/SupplierTest</b>
+Please, read carefully and implement it quickly. If you are proficient with TDD/BDD, you can do it in no time.
+
 
 ## License
 

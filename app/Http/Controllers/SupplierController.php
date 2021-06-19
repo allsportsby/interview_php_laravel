@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\SupplierResponse;
 use App\Models\Supplier;
 use Illuminate\Http\Request;
 
@@ -10,13 +11,10 @@ class SupplierController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        return response(file_get_contents(resource_path('data/suppliers.json')),200, [
-            'Content-Type' => 'application/json'
-        ]);
+        return SupplierResponse::collection(Supplier::all());
     }
 
     /**
@@ -36,9 +34,6 @@ class SupplierController extends Controller
      */
     public function store(Request $request)
     {
-        $supplier = new Supplier();
-        $supplier->save();
-        return response('', 204);
     }
 
     /**

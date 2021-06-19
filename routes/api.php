@@ -17,4 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::get('third_party_suppliers',[\App\Http\Controllers\ThirdPartySupplierController::class, 'index']);
 Route::resource('suppliers',\App\Http\Controllers\SupplierController::class);
